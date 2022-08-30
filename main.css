@@ -1,0 +1,33 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: thistle;
+}
+
+#para1 {
+    border-bottom:  solid palevioletred;
+}
+
+#me2 {
+    border-radius: 10px;
+    background-color: pink;
+    margin-top: 20px;
+    border: 1px solid grey;
+    width: 20%;
+}
+
+div {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.tb1, tr, td {
+    border:1px solid grey;
+}
+
+.tbdiv {
+    background-color: burlywood;
+}
