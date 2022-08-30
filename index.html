@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactory Learn to Code</title>
+
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            height:100%;
+            width:100%;
+            margin:0;
+            background-color:rgb(215, 221, 223);
+        }
+       
+        .header {
+            background-color:rgba(200, 248, 248, 0.479);
+            height:40px;
+        }
+        
+        .header-logo {
+            float:left;
+            margin: 10px 20px;
+        }
+        .header-nav {
+            float:left;
+        }
+        .header-nav-item li {
+            float:left;
+            list-style:none;
+            font-size: 0.8rem;
+            margin: 0 20px;            
+        }
+        a {
+            text-decoration:none;
+            color:rgb(35, 127, 155);
+            
+        }
+        .login-bar {
+            float:right;
+            margin: 2px 20px;
+        }  
+        
+           
+        .main-content-left {
+            float:left;   
+            width:50%;
+        }
+        .main-content-right {
+            float:right;
+            width:30%;
+            padding:10px;
+            margin-right:0;  
+            overflow:auto; 
+        }
+        .left-top {
+            background-color:white;
+        }
+        .left-top table {
+            width: 100%;
+        }
+        .left-top table td {
+            padding:30px;
+            text-align:center;
+            border-right: 1px solid rgb(240, 238, 238);
+        }
+        .left-bottom {
+            background-color:white;
+        }
+        .left-bottom table {
+            width:100%;
+            height:100%;
+        }
+        button {
+            background-color:lightseagreen;
+            color:white;
+            width:6rem;
+            height:30px;
+            border:0;
+        }
+        button:hover {
+            background-color:darkcyan;
+            cursor:pointer;
+            
+        }
+        .left-bottom table td {            
+            text-align:center;
+        }
+        .myjourney {
+            float:left;
+            background-color:white;
+            width:65%;
+            text-align: center;
+        }
+
+        .myjourney:hover {
+            box-shadow:5px 5px 5px lightgray;
+        }
+        .calendar {
+            float:left;
+        }
+        
+        .main-content:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .flex-container {
+            display:flex;
+            flex-direction: row;
+            background-color:white;
+            height:100%;            
+            margin-top:50px;
+            padding:40px;
+        }
+        .flex-footer-list a {
+            color:grey;
+            font-size: 0.85rem;
+        }
+        @media screen and (max-width:600px) {
+            .header {
+            height: 200px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .header-nav-item li {
+            width: 100%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .login-bar {
+            width: 100%; margin: 10px 0 10px 0;
+            }
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="/refactory-images/refactory courses page images/refactory-logo.png" alt="company logo" width="100px"></a>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-item">
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="slide_library.html">Slide Library</a></li>
+                    <li><a href="idle_page_2.html">Rankings</a></li>
+                    <li><a href="idle_page_2.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="login-bar">
+                <img src="/refactory-images/refactory courses page images/login.png" alt="login bar placeholder" height="36px">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="main-content-left">
+                <div class="left-top" style="margin-top:50px">
+                    <table>
+                        <tr>
+                            <td><img src="refactory-images/refactory courses page images/myavatar.png" width="50px"> Lv 1</td>
+                            <td><img src="refactory-images/refactory courses page images/exercises.svg">0 <br>Exercises cleared</td>
+                            <td style="border:0px"><img src="refactory-images/refactory courses page images/lessons.svg">0 <br>Lessons completed</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <p style="margin-top:50px"><img src="refactory-images/refactory courses page images/exercises.svg"> Getting Started</p>
+                
+                <div class="left-bottom" style="margin-top:50px; height:200px;">
+                    <table>
+                        <tr>
+                            <td style="width:20%; background-color:lightseagreen"><img src="refactory-images/refactory courses page images/bigme.svg" width="50%"></td>
+                            <td style="width:60%"><p>Next - Study HTML & CSS I</p><p>Getting Started with HTML</p></td>
+                            <td style="width:20%"><a href="https://www.refactory.ug"><button>Start</button></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main-content-right">
+                <div class="calendar"><h5 style="margin-top:50px">Recent History</h5><br>
+                <img src="/refactory-images/refactory courses page images/calendar.png" style="width:350px"></div>
+                <div class="myjourney">
+                    <h5>Learning Roadmap</h5>
+                    <img src="/refactory-images/refactory courses page images/propagatejourney.svg" style="width:50%"></div>
+            </div>
+            
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+       <div class="flex-container">
+            <div class="flex-footer-logo" style="width:30%">
+                <div><img src="/refactory-images/refactory courses page images/propagatejourney.svg" style="width:50%"></div>
+                <div>
+                    <br><br><br><h5>Check out our App</h5>
+                    <p><a href="https://itunes.apple.com/app/id1335868128?mt=8" target="_blank"><img src="/refactory-images/refactory courses page images/apple_appstore.svg" alt="app store button"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.progate" target="_blank"><img src="/refactory-images/refactory courses page images/googleplay.svg"></a></p>
+                    <br><br><br><br><br><div style="font-size:0.75rem"><span>&copy</span>2014 Progate. Inc.</div>
+                </div>
+            </div>
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">SERVICES</h4>
+                    <p><a href="courses.html" target="_blank">Courses</a></p>
+                    <p><a href="idle_page.html" target="_blank">Plans</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Dashboard</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Learning Roadmap</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Success stories</a></p>
+                    <p><a href="idle_page.html" target="_blank">Blog</a></p>
+                    <p><a href="idle_page.html" target="_blank">Help</a></p>
+            </div>
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">SUPPORT</h4>
+                <p><a href="idle_page.html" target="_blank">About Progate</a></p>
+                <p><a href="idle_page.html" target="_blank">Terms</a></p>
+                <p><a href="idle_page.html" target="_blank">Privacy Policy</a></p>            
+            </div>            
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">CONNECT WITH US</h4>
+                <p><a href="idle_page_2.html" target="_blank">Facebook</a></p>
+                <p><a href="idle_page_2.html" target="_blank">Twitter</a></p>
+            </div>            
+
+        </div>      
+
+    </footer>
+    
+</body>
+</html>

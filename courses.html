@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Courses</title>
+
+    <style>
+         * {
+            box-sizing:border-box;
+          } 
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            height:100%;
+            width:100%;
+            margin:0;
+            background-color:rgb(215, 221, 223);
+        }
+       
+        .header {
+            background-color:rgba(200, 248, 248, 0.479);
+            height:40px;
+        }
+        
+        .header-logo {
+            float:left;
+            margin: 10px 20px;
+        }
+        .header-nav {
+            float:left;
+        }
+        .header-nav-item li {
+            float:left;
+            list-style:none;
+            font-size: 0.8rem;
+            margin: 0 20px;            
+        }
+        a {
+            text-decoration:none;
+            color:rgb(35, 127, 155);
+            
+        }
+        .login-bar {
+            float:right;
+            margin: 2px 20px;
+        }  
+        
+        .main-top {
+            max-width: 100%;
+            margin: 0 8%;
+            padding-top: 30px;
+        }
+        .sturbon-pic {
+            max-width: 100%;
+            height:auto;
+        }
+        
+        /* Use a responsive grid-view  with 12 columns in order to have more control over the web page's layout
+        
+        First, calculate the percentage for one column: 100%/12 columns = 8.33%
+        
+        Then make one class for each of the 12 columns, class="col-" and a number defining how many columns the section should span, as shown below:*/
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        /* All the above columns should be floating to the left, and have a padding of 15px as set below:*/
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* Each row should be wrapped in a div. The number of columns inside a row whould always add up to 12*/
+
+        .row::after { 
+            content:"";
+            clear:both;
+            display:table;
+        }
+/* The columns inside a row are all floating to the left, and therefore taken out of the flow of the page, and other elements will be placed as if the columns do not exist. To prevent this, we add a style that clears the flow as above*/
+
+        .row {
+            max-width:90%;
+            margin:auto;
+        }        
+        
+        .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position:absolute;
+            z-index: 1;
+        }
+        .info-tooltip-icon:hover {
+            visibility:visible;
+        }
+
+           
+        
+        .flex-container {
+            display:flex;
+            flex-direction: row;
+            background-color:white;
+            height:100%;            
+            margin-top:50px;
+            padding:40px;
+        }
+        .flex-footer-list a {
+            color:grey;
+            font-size: 0.85rem;
+        }
+        @media screen and (max-width:600px) {
+            .header {
+            height: 200px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .header-nav-item li {
+            width: 100%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .login-bar {
+            width: 100%; margin: 10px 0 10px 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .sturbon-pic {
+                max-width: 100%;
+                height:auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="/refactory-images/refactory courses page images/refactory-logo.png" alt="company logo" width="100px"></a>
+            </div>
+            <div class="header-nav">
+                <ul class="header-nav-item">
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="slide_library.html">Slide Library</a></li>
+                    <li><a href="idle_page_2.html">Rankings</a></li>
+                    <li><a href="idle_page_2.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="login-bar">
+                <img src="/refactory-images/refactory courses page images/login.png" alt="login bar placeholder" height="36px">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row main-top">
+            <div class="col-12">
+                <p><span><img src="/refactory-images/refactory courses page images/nody.svg"></span>Web Development Courses <img class="info-tooltip-icon" src="/refactory-images/refactory courses page images/infoicon.png" style="width:12px"><span class="tooltiptext">Go through a series of lessons to gain the skills necessary for becoming a true creator.</span></p>
+            </div> 
+            
+            <div class="col-12 big-feature-img">
+                <a href="idle_page_2.html"><img class="sturbon-pic" src="/refactory-images//refactory courses page images/web_dev_course.png" alt="some pic">
+                </a>
+            </div>
+            
+            <div class="row col-2 small-img">
+                <a href="idle_page.html"> 
+                    <img src="refactory-images/refactory courses page images/magnet.png" alt="some pic here too"></a>
+            </div>
+
+            <div class="col-12">
+                <p><span><img src="/refactory-images/refactory courses page images/bk_stack.svg"></span>Language Courses <img class="info-tooltip-icon" src="/refactory-images/refactory courses page images/infoicon.png" style="width:12px"></p>
+            </div>
+
+            <div class="col-3">                
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/html&css.png" alt="html and css"></a>                
+            </div>
+
+            <div class="col-3">                
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/javascript.png" alt="javascript"></a>                
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/jquery.png" alt="jquery"></a>                
+            </div>
+
+            <div class="col-3">                
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/ruby.png" alt="ruby"></a>                
+            </div>
+        </div>
+            
+        <div class="row main-top2">
+            <div class="col-3">                
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/rubyonrails.png" alt="ruby on rails"></a>                
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/php.png" alt="php" style="width:255px"></a>                
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/java.png" alt="java" style="width:255px"></a>                
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/python.png" alt="python" style="width:255px"></a>
+            </div>
+        </div>
+
+        <div class="row main-top">
+            <div class="col-3">
+                <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/commandline.png" alt="command line" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/git.png" alt="git" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/sql.png" alt="sql" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/sass.png" alt="sass" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/go.png" alt="go" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/react.png" alt="react" style="width:255px"></a>
+            </div>
+
+            <div class="col-3">
+                    <a href ="idle_page.html"><img src="refactory-images/refactory courses page images/nodejs.png" alt="nodejs" style="width:255px"></a>
+            </div>
+
+            <div class="col-12">
+                <p style="text-align:center">See the list of all available lessons <span><a href="idle_page_2">here.</a></span></p>
+            </div>
+
+        </div>
+
+        
+            
+
+
+
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <div class="flex-footer-logo" style="width:30%">
+                <div><img src="/refactory-images/refactory courses page images/propagatejourney.svg" style="width:50%"></div>
+                <div>
+                    <br><br><br><h5>Check out our App</h5>
+                    <p><a href="https://itunes.apple.com/app/id1335868128?mt=8" target="_blank"><img src="/refactory-images/refactory courses page images/apple_appstore.svg" alt="app store button"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.progate" target="_blank"><img src="/refactory-images/refactory courses page images/googleplay.svg"></a></p>
+                    <br><br><br><br><br><div style="font-size:0.75rem"><span>&copy</span>2014 Progate. Inc.</div>
+                </div>
+            </div>
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">SERVICES</h4>
+                    <p><a href="courses.html" target="_blank">Courses</a></p>
+                    <p><a href="idle_page.html" target="_blank">Plans</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Dashboard</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Learning Roadmap</a></p>
+                    <p><a href="idle_page_2.html" target="_blank">Success stories</a></p>
+                    <p><a href="idle_page.html" target="_blank">Blog</a></p>
+                    <p><a href="idle_page.html" target="_blank">Help</a></p>
+            </div>
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">SUPPORT</h4>
+                <p><a href="idle_page.html" target="_blank">About Progate</a></p>
+                <p><a href="idle_page.html" target="_blank">Terms</a></p>
+                <p><a href="idle_page.html" target="_blank">Privacy Policy</a></p>            
+            </div>            
+            
+            <div class="flex-footer-list" style="width:23%">
+                <h4 style="color:grey">CONNECT WITH US</h4>
+                <p><a href="idle_page_2.html" target="_blank">Facebook</a></p>
+                <p><a href="idle_page_2.html" target="_blank">Twitter</a></p>
+            </div>            
+
+        </div>        
+    </footer>
+    
+</body>
+</html>
